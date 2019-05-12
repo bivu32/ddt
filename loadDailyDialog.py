@@ -85,13 +85,13 @@ fields = [('id', id),
           ]
 
 
-dataset = data.TabularDataset('./dailydialog.csv',
+dataset = data.TabularDataset('ddt/dailydialog.csv',
                             format='csv',
                             fields=fields,
                             )
 label.build_vocab(dataset)
 
-vectors = vocab.Vectors(name='glove.6B.100d.txt', cache='drive/bivu/')
+vectors = vocab.Vectors(name='glove.6B.100d.txt', cache='content/drive/bivu/')
 
 id.build_vocab(dataset)
 label.build_vocab(dataset)

@@ -91,7 +91,7 @@ dataset = data.TabularDataset('./dailydialog.csv',
                             )
 label.build_vocab(dataset)
 
-vectors = vocab.Vectors(name='glove.840B.300d.txt', cache='/Volumes/SJwork/GloVe/')
+vectors = vocab.Vectors(name='glove.6B.100d.txt', cache='drive/bivu/')
 
 id.build_vocab(dataset)
 label.build_vocab(dataset)
